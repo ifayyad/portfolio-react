@@ -6,13 +6,14 @@ const About = () => {
         <div className='flex flex-col justify-center items-center w-full h-full'>
             <div className='max-w-[1000px] w-full px-4 grid grid-cols-2 gap-8 '>
               <div className='sm:text-right pb-8 pl-4'>
-                <p className='text-4xl font-bold inline border-b-4 border-pink-600'>About</p>
+                <p className='text-5xl font-bold inline border-b-4 border-pink-600'>About</p>
               </div>
               <div>
             
               </div>
-            <div className='max-w-[1000px] w-full px-4 grid grid-cols-2 gap-8 '>
-              <div>
+              </div>
+            <div className='max-w-[1000px] w-full px-4 grid sm:grid-cols-2 gap-8 '>
+              <div className='sm:text-right text-3xl font-bold '>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia vel omnis provident iure cumque earum dolorem qui ullam excepturi aut?
                 </p>
               </div>
@@ -21,7 +22,7 @@ const About = () => {
               </div>
             </div>
             </div>
-        </div>
+        
     </div>
   )
 }
