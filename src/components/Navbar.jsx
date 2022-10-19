@@ -11,29 +11,29 @@ const Navbar = () => {
   const handleClick = () => setNav[!nav]
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#9de5eb] text-gray-300'  >
+    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#9de5eb] text-pink-600 text-2xl'  >
       <div>
-          <img src={Logo} alt="Logo image" style={{width:'50px'}} />
+          <img className='mt-6 sm:w-[80px] w-[50px]' src={Logo} alt="Logo image"  />
       </div>
 
         {/* Menu */}
           <ul className='hidden md:flex '>
-            <li className='font-extrabold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-pink-800 to-pink-400'>
+            <li>
             <Link to="home" smooth={true} duration={500} >
             Home
             </Link>
             </li>
-            <li className='font-extrabold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-pink-800 to-pink-400'>
+            <li>
             <Link to="about" smooth={true} duration={500} >
             About
             </Link>
             </li>
-            <li className='font-extrabold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-pink-800 to-pink-400'>
+            <li>
             <Link to="skills" smooth={true} duration={500} >
             Skills
             </Link>
             </li>
-            <li className='font-extrabold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-pink-800 to-pink-400'>
+            <li>
             <Link to="contact" smooth={true} duration={500} >
             Contact
             </Link>
@@ -62,13 +62,13 @@ const Navbar = () => {
         {/* Social media icons */}
         <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
           <ul>
-            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-700 bg-blue-600'>
+            <li className='w-[170px] h-[60px] flex justify-between items-center ml-[-110px] hover:ml-[-10px] duration-700 bg-blue-600'>
               <a className='flex justify-between items-center w-full text-gray-300'
               href='/'>
-                LinkedIn <FaLinkedin size={30} />
+                LinkedIn<FaLinkedin size={30} />
               </a>
             </li>
-            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-700 bg-blue-600'>
+            <li className='w-[160px] h-[60px] flex justify-between  items-center ml-[-100px] hover:ml-[-10px] duration-700 bg-blue-600'>
               <a className='flex justify-between items-center w-full text-gray-300'
               href='/'>
                 GitHub <FaGithub size={30} />
