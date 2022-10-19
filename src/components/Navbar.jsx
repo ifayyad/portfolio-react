@@ -2,8 +2,8 @@ import React, {useState} from 'react';
 import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import {BsFillPersonLinesFill} from 'react-icons/bs'
-
 import Logo from '../assets/logo.png';
+import {Link} from 'react-scroll'
 
 const Navbar = () => {
 
@@ -11,18 +11,33 @@ const Navbar = () => {
   const handleClick = () => setNav[!nav]
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'  >
+    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#9de5eb] text-gray-300'  >
       <div>
           <img src={Logo} alt="Logo image" style={{width:'50px'}} />
       </div>
 
         {/* Menu */}
-          <ul className='hidden md:flex'>
-            <li>Home</li>
-            <li>About</li>
-            <li>Skills</li>
-            <li>Work</li>
-            <li>Contact</li>
+          <ul className='hidden md:flex '>
+            <li className='font-extrabold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-pink-800 to-pink-400'>
+            <Link to="home" smooth={true} duration={500} >
+            Home
+            </Link>
+            </li>
+            <li className='font-extrabold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-pink-800 to-pink-400'>
+            <Link to="about" smooth={true} duration={500} >
+            About
+            </Link>
+            </li>
+            <li className='font-extrabold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-pink-800 to-pink-400'>
+            <Link to="skills" smooth={true} duration={500} >
+            Skills
+            </Link>
+            </li>
+            <li className='font-extrabold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-pink-800 to-pink-400'>
+            <Link to="contact" smooth={true} duration={500} >
+            Contact
+            </Link>
+            </li>
           </ul>
        
 
