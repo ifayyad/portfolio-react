@@ -7,7 +7,7 @@ import ReactImg from '../assets/react.png'
 const Skills = () => {
   return (
     <div name='skills' className='w-full h-screen bg-[#9de5eb]  text-[#0a192f]' >
-        <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full '>
+        <div className='max-w-[900px] mx-auto p-4 flex flex-col justify-center w-full h-full '>
             <div className='py-16'>
                 <p className='sm:text-5xl text-3xl font-bold inline border-b-4 border-pink-600'>Skills </p>
                 
