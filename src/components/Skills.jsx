@@ -15,22 +15,22 @@ const Skills = () => {
             
             <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-16 text-center py-8'>
                 
-                <div className='w-[150px] hover:scale-125 duration-500'>
+                <div className='sm:w-[100px] md:w-[150px] w-[50px] hover:scale-125 duration-500 hover:cursor-cell '>
                     <img className='' src={HTML} alt="HTML icon" />
                     <p className='my-4'>HTML</p>
                 </div>
 
-                <div className='w-[150px] hover:scale-125 duration-500'>
+                <div className='sm:w-[100px] md:w-[150px] w-[50px] hover:scale-125 duration-500 hover:cursor-wait'>
                     <img className='' src={CSS} alt="HTML icon" />
                     <p className='my-4'>CSS</p>
                 </div>
 
-                <div className='w-[150px] hover:scale-125 duration-500'>
+                <div className='sm:w-[100px] md:w-[150px] w-[50px] hover:scale-125 duration-500 hover:cursor-help '>
                     <img className='' src={JavaScript} alt="HTML icon" />
                     <p className='my-4'>JavaScript</p>
                 </div>
 
-                <div className='w-[150px] hover:scale-125 duration-500'>
+                <div className='sm:w-[100px] md:w-[150px] w-[50px] hover:scale-125 duration-500 hover:cursor-text '>
                     <img className='' src={ReactImg} alt="HTML icon" />
                     <p className='my-4'>React</p>
                 </div>
